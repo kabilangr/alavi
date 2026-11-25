@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alavi Privacy Policy</title>
+<meta name="description" content="Privacy policy for Alavi, the Android data usage meter and firewall.">
+<style>
+  :root {
+    --bg: #F6F7FB; --text: #1B2233; --muted: #55607A; --accent: #233F78; --rule: #DCE1EC; --card: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1524; --text: #E6EAF3; --muted: #A3ADC4; --accent: #9DB4EA; --rule: #2A3450; --card: #161E33; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 1.2rem; margin: 2.2em 0 .5em; }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .summary { background: var(--card); border: 1px solid var(--rule); border-left: 4px solid var(--accent);
+    border-radius: 8px; padding: 16px 20px; }
+  .summary p { margin: 0; }
+  ul { padding-left: 1.3em; }
+  li { margin: .35em 0; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--rule); }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+  code { font-size: .9em; }
+  @media (max-width: 560px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; }
+    td { border: 0; padding: 2px 0; } tr { border-bottom: 1px solid var(--rule); padding: 10px 0; }
+    td:first-child { font-weight: 600; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Alavi Privacy Policy</h1>
+  <p class="meta">App: Alavi – Data usage meter &amp; firewall (<code>com.nikared.alavi</code>)<br>
+  Developer: NikaRed · Effective date: 25 November 2026</p>
+
+  <div class="summary">
+    <p><strong>In short:</strong> Alavi does not collect, share or sell any data. Everything it reads stays on your
+    phone. The app does not have Android's internet permission, so it cannot send data anywhere, not even to us.
+    There are no accounts, ads, analytics or crash-reporting services.</p>
+  </div>
+
+  <h2>What Alavi reads on your phone, and why</h2>
+  <p>Alavi only reads information it needs to show your data usage and to block the apps you choose. You can
+  decline any permission. The features that need it then stop working, and the rest of the app keeps working.</p>
+  <table>
+    <thead><tr><th>Information</th><th>Why Alavi uses it</th></tr></thead>
+    <tbody>
+      <tr><td>Per-app network usage (Usage access)</td>
+          <td>To show how much mobile data and Wi-Fi each app uses, to show your history, and to check data plans
+          and per-app limits.</td></tr>
+      <tr><td>Which app is on screen (Usage access)</td>
+          <td>Only if you use "Only block in the background": the firewall needs to know whether that app is open.
+          Alavi does not keep a record of which apps you open.</td></tr>
+      <tr><td>List of installed apps</td>
+          <td>To show each app's name and icon next to its usage, and to let you choose apps to block or schedule.</td></tr>
+      <tr><td>SIM card details (slot, name, carrier)</td>
+          <td>To show mobile data for each SIM and to apply rules and data plans to a chosen SIM.</td></tr>
+      <tr><td>Network state</td>
+          <td>To know whether you're on Wi-Fi or mobile data, so the right block rules apply.</td></tr>
+      <tr><td>Battery level and charging state</td>
+          <td>For the battery screen, which shows battery use and health on this phone.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The firewall (VPN service)</h2>
+  <p>Alavi's firewall uses Android's VpnService to create a local VPN on your phone. It is not a VPN to a server:
+  traffic never goes to Alavi or anyone else.</p>
+  <ul>
+    <li>Only the apps you choose to block (by rule, data limit or schedule) are routed into the local VPN, and their
+    traffic is dropped there.</li>
+    <li>Alavi does not read, inspect, log, change or redirect the contents of any traffic.</li>
+    <li>Apps you don't block are not routed through the VPN at all.</li>
+    <li>The firewall runs only when you turn it on. Android asks for your consent first, and you can turn it off
+    at any time from the app, the Quick Settings tile or Android's VPN settings.</li>
+  </ul>
+
+  <h2>Where your data is stored</h2>
+  <ul>
+    <li>Usage history, block rules, limits, schedules, data plans and settings are stored only in the app's private
+    storage on your phone.</li>
+    <li>Usage history is kept for up to about two years so you can compare billing cycles. Older entries are
+    deleted automatically.</li>
+    <li>Android backup and device-to-device transfer are turned off for Alavi, so this data is not copied to
+    Google Drive or to a new phone.</li>
+    <li>To delete everything, clear Alavi's storage in Android Settings, or uninstall the app.</li>
+  </ul>
+
+  <h2>Notifications</h2>
+  <p>Notifications are created on your phone. They show that the firewall is running, warn you about your data
+  plan, tell you when an app reaches its data limit, and point out unusually high usage. You can turn them off in
+  Alavi's settings or in Android Settings.</p>
+
+  <h2>Sharing with third parties</h2>
+  <p>Alavi shares no data with anyone. It contains no advertising, analytics, tracking or crash-reporting SDKs, and
+  it has no servers. Google Play may collect information about your download and installation under
+  <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Alavi has no access to that information.</p>
+
+  <h2>Children</h2>
+  <p>Alavi is not directed at children and does not knowingly collect information from anyone, including
+  children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date. If a future
+  version of Alavi ever needed to handle data differently, this policy would be updated before that version is
+  released.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:support@nikared.com">support@nikared.com</a></p>
+</main>
+</body>
+</html>
